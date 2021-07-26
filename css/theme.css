@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #9356dc;
+    --secondary-color: #ff79da;
+    --tertiaire-color: #99E2D0;
+    --background-color:;
+    --white-color: #ffffff;
+    --black-color: #101010;
+  
+    --spacing-xs: 1rem;
+    --spacing-base: 2rem;
+    --spacing-md: 3rem;
+    --spacing-xl: 4rem;
+  }
+  
