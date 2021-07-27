@@ -1,0 +1,47 @@
+.header-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top__logo{
+    width: 30%;
+    }
+    
+.header-top__map{
+display: flex;
+align-items: center;
+justify-content:center;
+width: 100%;
+height: 5rem;
+font-size: 1.2rem;
+background: linear-gradient(#dddddd, #f2f2f24b);
+}
+
+.header-top__map__icon {
+    padding-right: var(--spacing-xs);
+}
+
+.header-title{
+    font-size: 1.5rem;
+}
+
+.header-text{
+    font-size: 1rem;
+}
+
+.root{
+    --boder-radius:2rem;
+}
+.header-button{
+    width: 15%;
+    height: 3rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    background:linear-gradient(to bottom right, #ff79da, #9356dc);
+    border-radius:2rem;
+    border: none;
+    cursor: pointer;
+} 
