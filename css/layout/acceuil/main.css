@@ -1,3 +1,5 @@
+@media screen and (max-width:768px) {
+    
 .main-menu__cards{
     display: flex;
     flex-direction: column;
@@ -12,22 +14,50 @@
     color: var(--white-color);
     background-color: var(--primary-color);
     border-radius: 5rem;
-    width: 2%;
+    width: 8%;
     height: 2rem;
-    margin-right: var(--spacing-xs);
+}
+
+:root{
+    --box-shadow: 1px 2px 2px 2px #dddada;
+}
+
+.main-menu__cards__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow:var(--box-shadow);
+    width: 80%;
+    height: 4rem;
+}
+
+.main-menu__cards__card--background{
+    background-color: #efe4fd;
 }
 
 .main-menu__card__icon{
     color: grey;
-    margin-right: var(--spacing-xs);
+    padding-right: var(--spacing-base);
+}
+
+.main-menu__card__icon.fas.fa-store{
+    color: #9356dc;
 }
 
 .main-menu-button{
     border: none;
-    background-color:var(--white-color)
+    background-color:var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 
-.main-menu__cards__card{
-    box-shadow: 3rem 3rem 3rem 3rem solid #b31c1c;
+.main-menu-button--background{
+    background-color:  #efe4fd;
+}
 
+.main-restaurants__card__link__image{
+    width: 20%;
+    height: 8rem;
+}
 }
