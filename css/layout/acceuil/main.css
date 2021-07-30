@@ -1,13 +1,13 @@
 @media screen and (max-width:768px) {
     
-.main-menu__cards{
+.main-menu__button{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: baseline;
 }
 
-.main-menu__card__number{
+.main-menu__button__number{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,26 +22,28 @@
     --box-shadow: 1px 2px 2px 2px #dddada;
 }
 
-.main-menu__cards__card{
+.main-menu__button__button{
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: center;
     border-radius: 1rem;
     box-shadow:var(--box-shadow);
     width: 80%;
     height: 4rem;
+    border:none
 }
 
-.main-menu__cards__card--background{
+.main-menu__button__button--background{
     background-color: #efe4fd;
 }
 
-.main-menu__card__icon{
+.main-menu__button__icon{
     color: grey;
     padding-right: var(--spacing-base);
 }
 
-.main-menu__card__icon.fas.fa-store{
+.main-menu__button__icon.fas.fa-store{
     color: #9356dc;
 }
 
@@ -56,7 +58,7 @@
     background-color:  #efe4fd;
 }
 
-.main-restaurants__card__link__image{
+.main-restaurants__button__link__image{
     width: 20%;
     height: 8rem;
 }
