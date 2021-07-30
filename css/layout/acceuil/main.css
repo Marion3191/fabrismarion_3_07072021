@@ -1,4 +1,4 @@
-@media screen and (max-width:768px) {
+/*@media screen and (max-width:768px) {*/
     
 .main-menu__button{
     display: flex;
@@ -31,7 +31,8 @@
     box-shadow:var(--box-shadow);
     width: 80%;
     height: 4rem;
-    border:none
+    border:none;
+ 
 }
 
 .main-menu__button__button--background{
@@ -58,8 +59,41 @@
     background-color:  #efe4fd;
 }
 
-.main-restaurants__button__link__image{
-    width: 20%;
-    height: 8rem;
+
+
+
+.main-restaurants{
+    background-color: var(--background-color);
 }
+
+.main-restaurants__card{
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    width: 90%;
+    height: 20rem;
+  
 }
+
+.main-restaurants__card__link{
+
+    text-decoration: none;
+    color:var(--black-color) ;
+}
+.main-restaurants__card__link__icon.far.fa-heart{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-end;
+   
+  
+}
+
+.main-restaurants__card__link__image{
+    object-fit: cover;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    height: 12rem;
+}
+
+

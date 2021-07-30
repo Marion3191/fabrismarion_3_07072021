@@ -1,52 +1,50 @@
-@media screen and (max-width:768px) {
+/*@media screen and (max-width:768px) {*/
 .header-top{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .header-top__logo{
+}
+.header-top__logo{
         width: 100%;
         height:3rem ;
         padding-top: var(--spacing-base) ;
         padding-bottom: var(--spacing-base);
+}
 
-        .header-top__map{
-            display: flex;
-            align-items: center;
-            justify-content:center;
-            width: 100%;
-            height: 5rem;
-            font-size: 1.2rem;
-            background-color: #e6e4e4;
-            padding-top: black 5px solid;
-
-            .header-top__map__icon {
-                padding-right: var(--spacing-xs);
-
-                .header-top__text{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    background-color:#f6f5f5;
-
-                    .header-top__title{
-                        font-size: 2rem;
-                        font-weight: 900;
-                        text-align: center;
-
-                        .header-top__text--text{
-                             margin-top: 0%;
-                            text-align: center;
-                            font-size: 1.5rem;
-                        }
-                    } 
-                }
-            }
+.header-top__map{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.2rem;
+    background-color: #e6e4e4;
+    padding-top: black 5px solid;
         }
-    }
-}        
+.header-top__map__icon {
+    padding-right: var(--spacing-xs);
+}
+.header-top__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f6f5f5;
+}
+
+.header-top__title{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+ }
+
+.header-top__text--text{
+    margin-top: 0%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+                     
 .root{
     --boder-radius:2rem;
 }
@@ -61,4 +59,3 @@
     cursor: pointer;
     margin-bottom: var(--spacing-md);
 } 
-}
