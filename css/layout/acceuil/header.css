@@ -1,4 +1,5 @@
-/*@media screen and (max-width:768px) {*/
+@media screen and (max-width:768px){
+    
 .header-top{
     width: 100%;
     display: flex;
@@ -6,6 +7,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .header-top__logo{
         width: 100%;
         height:3rem ;
@@ -23,9 +25,11 @@
     background-color: #e6e4e4;
     padding-top: black 5px solid;
         }
+
 .header-top__map__icon {
     padding-right: var(--spacing-xs);
 }
+
 .header-top__text{
     display: flex;
     flex-direction: column;
@@ -49,6 +53,7 @@
 .root{
     --boder-radius:2rem;
 }
+
 .header-button{
     width: 50%;
     height: 3rem;
