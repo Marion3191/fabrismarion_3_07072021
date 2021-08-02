@@ -1,0 +1,6 @@
+
+.main-restaurant__image{
+    object-fit: cover;
+    width: 10%;
+    height: 10rem;
+}
