@@ -31,6 +31,7 @@
     flex-direction: column;
     align-items: center;
     background-color:#f6f5f5;
+    width: 100%;
 }
 
 .header-top__title{

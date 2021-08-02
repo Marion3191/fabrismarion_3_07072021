@@ -1,5 +1,15 @@
-/*@media screen and (max-width:768px) {*/
-    
+@media screen and (max-width:768px) {
+
+.main-menu{
+    width: 100%;
+    height: 35rem;
+}
+
+.main-menu__title{
+    font-size: 2rem;
+    margin-left:var(--spacing-base);
+}
+
 .main-menu__button{
     display: flex;
     flex-direction: column;
@@ -16,6 +26,9 @@
     border-radius: 5rem;
     width: 8%;
     height: 2rem;
+    position:relative;
+    top:4rem;
+    left: 1.5rem;
 }
 
 :root{
@@ -64,6 +77,14 @@
 
 .main-restaurants{
     background-color: var(--background-color);
+    width: 100%;
+    height: 100rem;
+}
+
+.main-restaurants__title{
+    font-size: 2rem;
+    margin-left:1.5rem;
+    padding-top: var(--spacing-base);
 }
 
 .main-restaurants__card{
@@ -71,21 +92,30 @@
     border-radius: 2rem;
     width: 90%;
     height: 20rem;
-  
+    margin:auto;
+    margin-bottom: var(--spacing-md);
 }
 
 .main-restaurants__card__link{
-
     text-decoration: none;
-    color:var(--black-color) ;
+    color:var(--black-color) ; 
 }
+
+.main-restaurants__card__link__title{
+    font-size: 1.5rem;
+    margin-left:var(--spacing-xs);
+}
+
+.main-restaurants__card__link__subtitle{
+    font-size: 1rem;
+    margin-left:var(--spacing-xs);
+}
+
 .main-restaurants__card__link__icon.far.fa-heart{
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: flex-end;
-   
-  
+    position: relative;
+    left: 18rem;
+    bottom: 5rem;
+    font-size: 3rem;
 }
 
 .main-restaurants__card__link__image{
@@ -96,4 +126,17 @@
     height: 12rem;
 }
 
-
+.main-restaurants__card__link__text{
+    background-color: var(--tertiaire-color);
+    color:#21b691 ;
+    width: 20%;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    position:relative; 
+    top: -22rem;
+    left: 18rem;
+}
+}
