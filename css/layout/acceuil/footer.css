@@ -18,8 +18,11 @@
 }
 
 .footer-list__links__link{
-text-decoration: none;
-color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--white-color);
+    padding-left:1rem;
 }
 
 .footer-list__links__icon {
