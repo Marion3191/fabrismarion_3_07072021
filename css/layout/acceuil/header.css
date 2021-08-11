@@ -58,10 +58,16 @@
     height: 3rem;
     color: var(--white-color);
     font-size: 1rem;
-    background:linear-gradient(to bottom right, #ff79da, #9356dc);
+    background-color: var(--primary-color);
     border-radius:2rem;
     border: none;
     cursor: pointer;
     margin-bottom: var(--spacing-md);
+    box-shadow: 2px 2px 2px 2px #dfdede;
 } 
+
+.header-button:hover{
+    background:linear-gradient(to bottom right, #ff79da, #9356dc);
+    box-shadow: 2px 2px 2px 2px #b1afaf ;
+}
 }
