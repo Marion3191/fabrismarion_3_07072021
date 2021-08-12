@@ -1,4 +1,4 @@
-@media screen and (max-width:425px) {
+/*@media screen and (max-width:425px) {*/
 
 .main-menu{
     width: 100%;
@@ -53,6 +53,7 @@
 }
 
 .main-menu__button__icon{
+    font-size: 1.5rem;
     color: grey;
     padding-right: var(--spacing-base);
 }
@@ -71,9 +72,6 @@
 .main-menu-button--background{
     background-color:  #efe4fd;
 }
-
-
-
 
 .main-restaurants{
     background-color: var(--background-color);
@@ -111,12 +109,19 @@
     margin-left:var(--spacing-xs);
 }
 
-.main-restaurants__card__link__icon.far.fa-heart{
+.main-restaurants__card__link__icon{
     position: relative;
-    left: 18rem;
-    bottom: 5rem;
-    font-size: 3rem;
+    left: 19rem;
+    bottom: 4rem;
+    font-size: 1.8rem; 
+    color: red;
+    background-;
+    
 }
+
+/*.main-restaurants__card__link__icon-far-fa-heart{
+color:red;
+}*/
 
 .main-restaurants__card__link__image{
     object-fit: cover;
@@ -136,7 +141,7 @@
     justify-content: center;
     border-radius:5px;
     position:relative; 
-    top: -22rem;
+    top: -21rem;
     left: 18rem;
 }
 }
