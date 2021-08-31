@@ -1,3 +1,5 @@
+
+
 .main-menu{
     width: 100%;
     height: 35rem;
@@ -5,7 +7,7 @@
 
 .main-menu__title{
     font-size: 2rem;
-    margin-left:$spacing-base;
+    margin-left: $spacing-base;
 }
 
 .main-menu__button{
@@ -19,8 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color:$white-color;
-    background-color:$primary-color;
+    color: $white-color;
+    background-color: $primary-color;
     border-radius: 5rem;
     width: 8%;
     height: 2rem;
@@ -39,7 +41,7 @@
     align-self: center;
     justify-content: center;
     border-radius: 1rem;
-    box-shadow:var(--box-shadow);
+    box-shadow: @include;
     width: 85%;
     height: 5rem;
     border:none;
@@ -53,7 +55,7 @@
 .main-menu__button__icon{
     font-size: 1.5rem;
     color: grey;
-    padding-right:2rem;
+    padding-right: var(--spacing-base);
 }
 
 .main-menu__button__icon.fas.fa-store{
@@ -62,7 +64,7 @@
 
 .main-menu-button{
     border: none;
-    background-color:$white-color;
+    background-color:var(--white-color);
     font-size: 1.2rem;
     font-weight: 200;
 }
@@ -72,7 +74,7 @@
 }
 
 .main-restaurants{
-    background-color:$background-color;
+    background-color: var(--background-color);
     width: 100%;
     height: 100rem;
 }
@@ -80,34 +82,46 @@
 .main-restaurants__title{
     font-size: 2rem;
     margin-left:1.5rem;
-    padding-top:$spacing-base;
+    padding-top: var(--spacing-base);
 }
 
 .main-restaurants__card{
-    background-color:$white-color;
+    background-color: var(--white-color);
     border-radius: 2rem;
     width: 90%;
     height: 20rem;
     margin:auto;
-    margin-bottom:$spacing-md;
+    margin-bottom: var(--spacing-md);
 }
 
 .main-restaurants__card__link{
     text-decoration: none;
-    color:$black-color ; 
+    color:var(--black-color) ; 
 }
 
 .main-restaurants__card__link__title{
     font-size: 1.5rem;
-    margin-left:$spacing-xs;
+    margin-left:var(--spacing-xs);
 }
 
 .main-restaurants__card__link__subtitle{
     font-size: 1rem;
-    margin-left:$spacing-xs;
+    margin-left:var(--spacing-xs);
 }
 
- 
+.main-restaurants__card__link__icon{
+    position: relative;
+    left: 19rem;
+    bottom: 4rem;
+    font-size: 1.8rem; 
+    color: red;
+    
+}
+
+/*.main-restaurants__card__link__icon-far-fa-heart{
+color:red;
+}*/
+
 .main-restaurants__card__link__image{
     object-fit: cover;
     border-top-left-radius: 2rem;
@@ -117,7 +131,7 @@
 }
 
 .main-restaurants__card__link__text{
-    background-color:$tertiaire-color;
+    background-color: var(--tertiaire-color);
     color:#21b691 ;
     width: 20%;
     height: 1.8rem;
@@ -126,11 +140,7 @@
     justify-content: center;
     border-radius:5px;
     position:relative; 
-    top: -20rem;
+    top: -21rem;
     left: 18rem;
 }
 
-.main-restaurants__card__link__icon{
-    position:relative;
-    left:5rem;
-}

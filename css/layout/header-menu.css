@@ -1,0 +1,22 @@
+
+.header-top__menu{
+   display:flex;
+   justify-content: space-around;
+   align-self: center;
+
+}
+
+.header-top__link__menu__icon{
+    font-size:1.5rem;
+    color: black;
+   position: relative;
+   top: 2rem;
+   left:1rem;
+}
+
+.header-logo__menu{
+    margin: auto;
+    padding-top: var(--spacing-base);
+    margin-bottom: var(--spacing-xs);
+}
+
