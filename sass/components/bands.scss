@@ -1,0 +1,68 @@
+
+.main-restaurant__bands__subtitle{
+    border-bottom: 3px solid#99E2D0 ;
+    width: calc(100% / 8);
+}
+
+.main-restaurant__band--1{ 
+    background-color: var(--white-color);
+    margin: auto;
+    width: 95%;
+    height: 5rem;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    border-radius: 1rem;
+    animation: apparition 3s ease-out;
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  
+.main-restaurant__band--2{ 
+    background-color: var(--white-color);
+    margin: auto;
+    width: 95%;
+    height: 5rem;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    border-radius: 1rem;
+    animation: apparition 4s ease-out;
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.main-restaurant__band--3{ 
+    background-color: var(--white-color);
+    margin: auto;
+    width: 95%;
+    height: 5rem;
+    box-shadow:1px 1px 1px 1px #f2f2f2;
+    border-radius: 1rem;
+    animation: apparition 5s ease-out;
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

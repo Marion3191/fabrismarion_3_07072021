@@ -1,0 +1,17 @@
+.button {
+  width: 50%;
+  height: 3rem;
+  color: $white-color;
+  font-size: 1rem;
+  background-color: $primary-color;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: $spacing-md;
+  box-shadow: 2px 2px 2px 2px #dfdede;
+
+  .button:hover {
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    box-shadow: 2px 2px 2px 2px #b1afaf;
+  }
+}
