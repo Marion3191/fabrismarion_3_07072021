@@ -1,4 +1,5 @@
 .button {
+  display: block;
   width: 50%;
   height: 3rem;
   color: #ffffff;
@@ -7,11 +8,12 @@
   border-radius: 2rem;
   border: none;
   cursor: pointer;
-  margin-bottom: 3rem;
-  box-shadow: 2px 2px 2px 2px #dfdede; }
-  .button .button:hover {
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
-    box-shadow: 2px 2px 2px 2px #b1afaf; }
+  box-shadow: 2px 2px 2px 2px #dfdede;
+  margin: auto; }
+
+.button:hover {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 2px 2px 2px 2px #b1afaf; }
 
 .main-restaurant__bands__subtitle {
   border-bottom: 3px solid #99E2D0;
@@ -299,6 +301,7 @@
   left: 5rem; }
 
 .button {
+  display: block;
   width: 50%;
   height: 3rem;
   color: #ffffff;
@@ -307,11 +310,12 @@
   border-radius: 2rem;
   border: none;
   cursor: pointer;
-  margin-bottom: 3rem;
-  box-shadow: 2px 2px 2px 2px #dfdede; }
-  .button .button:hover {
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
-    box-shadow: 2px 2px 2px 2px #b1afaf; }
+  box-shadow: 2px 2px 2px 2px #dfdede;
+  margin: auto; }
+
+.button:hover {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 2px 2px 2px 2px #b1afaf; }
 
 .main-restaurant__image {
   object-fit: cover;
