@@ -119,9 +119,10 @@
   cursor: pointer;
   margin-bottom: 3rem;
   box-shadow: 2px 2px 2px 2px #dfdede; }
-  .button .button:hover {
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
-    box-shadow: 2px 2px 2px 2px #b1afaf; }
+
+.button:hover {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 1px 1px 1px 1px #b1afaf; }
 
 .header-top {
   display: flex;
@@ -318,9 +319,9 @@
   height: 20rem; }
 
 .main-restaurant__card {
-  background-color: var(--background-color);
+  background-color: #f2f2f2;
   width: 100%;
-  height: 80rem;
+  height: 100rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   position: relative;
@@ -337,24 +338,21 @@
   bottom: 3.5rem;
   font-size: 2rem; }
 
-.main-restaurant__bands:nth-child(1) {
-  width: 95%;
+.main-restaurant__band {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+  line-height: 0rem;
+  padding-left: 1rem;
+  width: 90%;
   height: 5rem;
   margin: auto;
-  background-color: white; }
+  margin-bottom: 3rem; }
 
-.main-restaurant__bands__subtitle {
-  border-bottom: 3px solid #99E2D0;
-  width: calc(100% / 8); }
-
-.main-restaurant__band {
-  /* background-color: var(--white-color);
-    margin: auto;
-    width: 95%;
-    height: 5rem;
-    box-shadow:1px 1px 1px 1px #f2f2f2;
-    border-radius: 1rem;
-    animation: apparition 1s ease-out;*/ }
+.main-restaurant__band:nth-child(1) {
+  animation: apparition 1s ease-out; }
 
 @keyframes apparition {
   from {
@@ -364,13 +362,7 @@
     opacity: 1;
     transform: translateY(0px); } }
 
-.main-restaurant__bands:nth-child(2) {
-  background-color: var(--white-color);
-  margin: auto;
-  width: 95%;
-  height: 5rem;
-  box-shadow: 1px 1px 1px 1px #f2f2f2;
-  border-radius: 1rem;
+.main-restaurant__band:nth-child(2) {
   animation: apparition 2s ease-out; }
 
 @keyframes apparition {
@@ -381,14 +373,74 @@
     opacity: 1;
     transform: translateY(0px); } }
 
-.main-restaurant__band--3 {
-  background-color: var(--white-color);
-  margin: auto;
-  width: 95%;
-  height: 5rem;
-  box-shadow: 1px 1px 1px 1px #f2f2f2;
-  border-radius: 1rem;
+.main-restaurant__band:nth-child(3) {
   animation: apparition 3s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(4) {
+  animation: apparition 4s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(5) {
+  animation: apparition 5s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(6) {
+  animation: apparition 6s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(7) {
+  animation: apparition 7s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(8) {
+  animation: apparition 8s ease-out; }
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.main-restaurant__band:nth-child(9) {
+  animation: apparition 9s ease-out; }
 
 @keyframes apparition {
   from {
