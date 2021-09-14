@@ -1,5 +1,35 @@
 @import "../components/button-header.scss";
+.header-top{
+  text-align: center;
+}
 
+.header-top__map{
+  margin-top: 2rem;
+  padding-top: 1rem;
+  background-color: #f2f2f2;
+}
+
+.header-top__map__icon{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.header-top____map__text{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.header-top__title{
+  font-size: 1.5rem;
+  line-height: 5rem;
+}
+
+.header-top__text--text{
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width:425px){
 .header-top {
   display: flex;
   flex-direction: column;
@@ -26,7 +56,8 @@
 }
 
 .header-top__map__icon {
-  padding-right: var(--spacing-xs);
+  font-size: 2rem;
+  padding-right: 1rem;
 }
 
 .header-top__text {
@@ -38,6 +69,8 @@
 }
 
 .header-top__title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-size: 2rem;
   font-weight: 900;
   text-align: center;
@@ -47,4 +80,6 @@
   margin-top: 0%;
   text-align: center;
   font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
 }

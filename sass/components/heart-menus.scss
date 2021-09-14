@@ -1,0 +1,28 @@
+.heart-menu{
+  font-size: 5rem;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    cursor: pointer;
+    position: relative;
+    left: 70rem;
+    bottom: 3rem;
+  }
+
+  @media screen and (max-width:768px){
+    .heart-menu{
+      position: relative;
+      left: 35rem;
+      bottom: 3rem;
+    }
+  }
+
+  @media screen and (max-width:425px){
+    .heart-menu{
+      position: relative;
+      left: 20rem;
+      bottom: 3rem;
+    }
+   
+
+  }
