@@ -59,26 +59,40 @@ margin-left: 2rem;
 }
 
 .main-restaurant__band__check{
+  display: none;
   position:relative;
-  left: 32rem;
-  color: #99E2D0;
+  left: 34rem;
+  bottom:4rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #99E2D0;
+  &:hover{
+    display: inline;
+    animation: slide-left 0.5s;
+    animation: rotate;
+ 
+  }
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+@keyframes slide-left {
+0% {
+  transform: translateX(0);
+          transform: translateX(0);
+}
+100% {
+  transform: translateX(-50px);
+          transform: translateX(-100px);
+}
 }
 
-.main-restaurant__band__check:hover{
- animation: slide-left;
- cursor: pointer;
-}
-  @-webkit-keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
-    }
-  }
-  
+
   
 
 @media screen and (max-width:768px){
@@ -138,10 +152,10 @@ margin-left: 2rem;
     text-decoration-thickness: 3px;
     text-align: start;
   }
-  *{outline: solid 1px red;}
-
+ 
   .main-restaurant__bands{
     width: 95%;
+    margin: auto;
   }
 
   .main-restaurant__band{ 
@@ -162,7 +176,7 @@ margin-left: 2rem;
     text-align: start;
   }
   .main-restaurant__band__price{
-    width: 20%;
+    width: 10%;
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;

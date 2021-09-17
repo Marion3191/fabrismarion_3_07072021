@@ -15,14 +15,27 @@
         <header class="header-top__menu">
             <a class="header-top__link__menu" href="#">
                 <i class="header-top__link__menu__icon fas fa-arrow-left"></i></a>
-                <img class="header-logo__menu" src="images/ohmyfood@2x.svg" alt="ohmyfood">
+            <img class="header-logo__menu" src="images/ohmyfood@2x.svg" alt="ohmyfood">
         </header>
 
         <main class="main-restaurant">
             <img class="main-restaurant__image" src="images/Le-delice-des-sens.jpg" alt="LEdelicedessens">
             <section class="main_restaurant__card">
                 <h1 class="main-restaurant-card__title">Le délice des sens</h1>
-                <i class="main-restaurants-title__card__icon far fa-heart"></i>
+                <div class="heart-menu">
+                    <svg class="heart-main" viewBox="0 0 805 805" width="100">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                    </svg>
+                    <svg class="heart-background" viewBox="0 0 312 312" width="100">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                        <defs>
+                            <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                                <stop offset="5%" stop-color="#9356dc" />
+                                <stop offset="95%" stop-color="#ff79da" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
 
                 <h2 class="main-restaurant__bands__subtitle">Entrées</h2>
                 <div class="main_restaurant__band">
@@ -81,15 +94,15 @@
                 </div>
                 <input class="button" type="button" value="Commander"/>
             </section>
-   
+        </main>
 
         <footer>
             <div class="footer-list"><img class="footer-list__logo" src="images/ohmyfood@2x.svg" alt="ohmyfood"/>
                 <ul class="footer-list__links">
                     <li><i class="footer-list__links__icon fas fa-utensils"></i>
-                    <a class="footer-list__links__link" href="#" >Proposer un restaurant</a></li>
+                        <a class="footer-list__links__link" href="#" >Proposer un restaurant</a></li>
                     <li><i class="footer-list__links__icon fas fa-hands-helping"></i>
-                    <a class="footer-list__links__link" href="#">Devenir partenaire</a></li>
+                        <a class="footer-list__links__link" href="#">Devenir partenaire</a></li>
                     <li><a class="footer-list__links__link" href="#">Mentions légales</a></li>
                     <li><a class="footer-list__links__link" href="#">Contact</a></li>
                 </ul>

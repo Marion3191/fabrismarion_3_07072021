@@ -206,20 +206,30 @@ body {
   bottom: 2rem; }
 
 .main-restaurant__band__check {
+  display: none;
   position: relative;
-  left: 32rem;
-  color: #99E2D0; }
+  left: 34rem;
+  bottom: 4rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #99E2D0; }
+  .main-restaurant__band__check:hover {
+    display: inline;
+    animation: slide-left 0.5s;
+    animation: rotate; }
 
-.main-restaurant__band__check:hover {
-  animation: slide-left;
-  cursor: pointer; }
-
-@-webkit-keyframes slide-left {
+@keyframes rotate {
   0% {
-    -webkit-transform: translateX(0);
+    transform: rotate(0); }
+  100% {
+    transform: rotate(90deg); } }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
     transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(-100px);
+    transform: translateX(-50px);
     transform: translateX(-100px); } }
 
 @media screen and (max-width: 768px) {
@@ -268,10 +278,9 @@ body {
     text-decoration-color: #99E2D0;
     text-decoration-thickness: 3px;
     text-align: start; }
-  * {
-    outline: solid 1px red; }
   .main-restaurant__bands {
-    width: 95%; }
+    width: 95%;
+    margin: auto; }
   .main-restaurant__band {
     height: 5rem;
     margin-bottom: 2rem;
@@ -286,7 +295,7 @@ body {
     line-height: 2rem;
     text-align: start; }
   .main-restaurant__band__price {
-    width: 20%;
+    width: 10%;
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;
@@ -403,7 +412,6 @@ path {
     bottom: 3rem; } }
 
 .heart-menu {
-  font-size: 5rem;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
@@ -422,7 +430,7 @@ path {
   .heart-menu {
     position: relative;
     left: 20rem;
-    bottom: 3rem; } }
+    bottom: 2rem; } }
 
 .header-top__menu {
   width: 100%;
@@ -808,20 +816,30 @@ path {
   bottom: 2rem; }
 
 .main-restaurant__band__check {
+  display: none;
   position: relative;
-  left: 32rem;
-  color: #99E2D0; }
+  left: 34rem;
+  bottom: 4rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #99E2D0; }
+  .main-restaurant__band__check:hover {
+    display: inline;
+    animation: slide-left 0.5s;
+    animation: rotate; }
 
-.main-restaurant__band__check:hover {
-  animation: slide-left;
-  cursor: pointer; }
-
-@-webkit-keyframes slide-left {
+@keyframes rotate {
   0% {
-    -webkit-transform: translateX(0);
+    transform: rotate(0); }
+  100% {
+    transform: rotate(90deg); } }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
     transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(-100px);
+    transform: translateX(-50px);
     transform: translateX(-100px); } }
 
 @media screen and (max-width: 768px) {
@@ -870,10 +888,9 @@ path {
     text-decoration-color: #99E2D0;
     text-decoration-thickness: 3px;
     text-align: start; }
-  * {
-    outline: solid 1px red; }
   .main-restaurant__bands {
-    width: 95%; }
+    width: 95%;
+    margin: auto; }
   .main-restaurant__band {
     height: 5rem;
     margin-bottom: 2rem;
@@ -888,7 +905,7 @@ path {
     line-height: 2rem;
     text-align: start; }
   .main-restaurant__band__price {
-    width: 20%;
+    width: 10%;
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;
@@ -896,7 +913,6 @@ path {
     top: -3rem; } }
 
 .heart-menu {
-  font-size: 5rem;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
@@ -915,7 +931,7 @@ path {
   .heart-menu {
     position: relative;
     left: 20rem;
-    bottom: 3rem; } }
+    bottom: 2rem; } }
 
 .main-restaurant__image {
   object-fit: cover;
