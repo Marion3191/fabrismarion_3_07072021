@@ -177,7 +177,10 @@ body {
 .main-restaurant__bands__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  text-decoration-thickness: #99E2D0; }
+  height: 2rem;
+  width: 48px;
+  margin-right: 1rem;
+  border-bottom: 5px solid #99E2D0; }
 
 .main-restaurant__band {
   background-color: white;
@@ -199,30 +202,31 @@ body {
   font-size: 1.2rem; }
 
 .main-restaurant__band__price {
+  width: 8%;
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
   left: 32rem;
-  bottom: 2rem; }
+  bottom: 2rem;
+  display: none; }
 
+/*
+*{outline: solid 1px red;}
+*/
 .main-restaurant__band__check {
-  display: none;
+  width: 12%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  left: 34rem;
-  bottom: 4rem;
-  font-size: 2rem;
-  color: white;
-  background-color: #99E2D0; }
-  .main-restaurant__band__check:hover {
-    display: inline;
-    animation: slide-left 0.5s;
-    animation: rotate; }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(90deg); } }
+  left: 32.2rem;
+  bottom: 4.2rem;
+  color: #eef5f3;
+  background-color: #99E2D0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  animation: slide-left; }
 
 @keyframes slide-left {
   0% {
@@ -348,12 +352,13 @@ body {
   box-sizing: border-box; }
 
 .heart {
+  width: 8%;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
   cursor: pointer;
   position: relative;
-  left: 35rem;
+  left: 38rem;
   bottom: 3rem; }
 
 svg {
@@ -411,7 +416,18 @@ path {
     left: 17rem;
     bottom: 3rem; } }
 
+@media screen and (max-width: 425px) {
+  .heart {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    cursor: pointer;
+    position: relative;
+    left: 20rem;
+    bottom: 3rem; } }
+
 .heart-menu {
+  width: 10%;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
@@ -787,7 +803,10 @@ path {
 .main-restaurant__bands__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  text-decoration-thickness: #99E2D0; }
+  height: 2rem;
+  width: 48px;
+  margin-right: 1rem;
+  border-bottom: 5px solid #99E2D0; }
 
 .main-restaurant__band {
   background-color: white;
@@ -809,30 +828,31 @@ path {
   font-size: 1.2rem; }
 
 .main-restaurant__band__price {
+  width: 8%;
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
   left: 32rem;
-  bottom: 2rem; }
+  bottom: 2rem;
+  display: none; }
 
+/*
+*{outline: solid 1px red;}
+*/
 .main-restaurant__band__check {
-  display: none;
+  width: 12%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  left: 34rem;
-  bottom: 4rem;
-  font-size: 2rem;
-  color: white;
-  background-color: #99E2D0; }
-  .main-restaurant__band__check:hover {
-    display: inline;
-    animation: slide-left 0.5s;
-    animation: rotate; }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(90deg); } }
+  left: 32.2rem;
+  bottom: 4.2rem;
+  color: #eef5f3;
+  background-color: #99E2D0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  animation: slide-left; }
 
 @keyframes slide-left {
   0% {
@@ -913,6 +933,7 @@ path {
     top: -3rem; } }
 
 .heart-menu {
+  width: 10%;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
@@ -1105,3 +1126,59 @@ path {
 @media screen and (max-width: 425px) {
   .button {
     width: 50%; } }
+
+.loader__circles--loader {
+  position: absolute;
+  top: 30rem;
+  left: 55rem;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  opacity: 0;
+  transition: opacity 10s ease-in-out; }
+
+.loader__circles {
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #9356dc;
+  animation: spin 1s linear infinite; }
+
+.loader__circles:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #ff79da;
+  opacity: 0.8;
+  animation: spin 5s linear infinite; }
+
+.loader__circles:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #99E2D0;
+  opacity: 0.5;
+  animation: spinrever 10s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes spinrevers {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }

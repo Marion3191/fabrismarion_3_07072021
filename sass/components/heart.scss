@@ -7,12 +7,13 @@
 
 
 .heart{
+  width: 8%;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
   cursor: pointer;
   position: relative;
-  left: 35rem;
+  left: 38rem;
   bottom: 3rem;
 }
   svg {
@@ -82,4 +83,16 @@
   left: 17rem;
   bottom: 3rem;
 }
+}
+
+@media screen and (max-width:425px){
+  .heart{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    cursor: pointer;
+    position: relative;
+    left: 20rem;
+    bottom: 3rem;
+  }
 }

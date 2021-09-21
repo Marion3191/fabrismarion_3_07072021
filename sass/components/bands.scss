@@ -25,7 +25,10 @@
 .main-restaurant__bands__subtitle{
   font-size: 1.5rem;
   font-weight: 600;
-text-decoration-thickness: #99E2D0;
+  height: 2rem;
+  width: 48px;
+  margin-right: 1rem;
+  border-bottom:5px solid #99E2D0;
 }
 
 .main-restaurant__band{
@@ -51,36 +54,33 @@ margin-left: 2rem;
 }
 
 .main-restaurant__band__price{
+  width: 8%;
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
   left: 32rem;
   bottom: 2rem;
+display: none;
+}
+/*
+*{outline: solid 1px red;}
+*/
+.main-restaurant__band__check{
+  width: 12%;
+  height: 5rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+  left: 32.2rem;
+  bottom:4.2rem ;
+  color: #eef5f3;
+  background-color: #99E2D0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  animation: slide-left;
 }
 
-.main-restaurant__band__check{
-  display: none;
-  position:relative;
-  left: 34rem;
-  bottom:4rem;
-  font-size: 2rem;
-  color: white;
-  background-color: #99E2D0;
-  &:hover{
-    display: inline;
-    animation: slide-left 0.5s;
-    animation: rotate;
- 
-  }
-}
-@keyframes rotate {
-  0%{
-    transform: rotate(0);
-  }
-  100%{
-    transform: rotate(90deg);
-  }
-}
 @keyframes slide-left {
 0% {
   transform: translateX(0);
