@@ -160,7 +160,7 @@ body {
 
 .main-restaurant__bands .main-restaurant__band,
 .main-restaurant__bands .main-restaurant__bands__subtitle {
-  animation: apparition 1s ease-out; }
+  animation: apparition 2s ease-in-out; }
 
 @keyframes apparition {
   from {
@@ -186,7 +186,7 @@ body {
   background-color: white;
   width: 30%;
   height: 5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-left: 2rem; }
@@ -210,9 +210,6 @@ body {
   bottom: 2rem;
   display: none; }
 
-/*
-*{outline: solid 1px red;}
-*/
 .main-restaurant__band__check {
   width: 12%;
   height: 5rem;
@@ -222,10 +219,11 @@ body {
   position: relative;
   left: 32.2rem;
   bottom: 4.2rem;
+  font-size: 2rem;
   color: #eef5f3;
   background-color: #99E2D0;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   animation: slide-left; }
 
 @keyframes slide-left {
@@ -238,13 +236,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .main-restaurant__bands__subtitle {
-    width: 100%;
+    width: 60px;
+    height: 2.5rem;
     font-size: 2rem;
     font-weight: 600;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: center; }
   .main-restaurant__bands {
     width: 60%;
@@ -275,12 +270,8 @@ body {
 
 @media screen and (max-width: 425px) {
   .main-restaurant__bands__subtitle {
-    width: 100%;
+    width: 50px;
     font-size: 1.5rem;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: start; }
   .main-restaurant__bands {
     width: 95%;
@@ -357,9 +348,9 @@ body {
   stroke: black;
   stroke-width: 20;
   cursor: pointer;
-  position: relative;
-  left: 38rem;
-  bottom: 3rem; }
+  position: absolute;
+  right: 2rem;
+  bottom: 0.5rem; }
 
 svg {
   overflow: visible;
@@ -434,13 +425,13 @@ path {
   cursor: pointer;
   position: relative;
   left: 70rem;
-  bottom: 3rem; }
+  bottom: 2rem; }
 
 @media screen and (max-width: 768px) {
   .heart-menu {
     position: relative;
     left: 35rem;
-    bottom: 3rem; } }
+    bottom: 2rem; } }
 
 @media screen and (max-width: 425px) {
   .heart-menu {
@@ -545,24 +536,43 @@ path {
 
 .main-restaurants {
   background-color: #f2f2f2;
-  width: 100%;
-  height: 60rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  height: 55rem; }
 
 .main-restaurants__title {
-  width: 100%;
-  height: 2rem;
   font-size: 2rem;
-  margin-left: 1.5rem;
-  padding-top: 2rem; }
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem; }
+
+.main-restaurants__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.main-restaurants :nth-child(1) {
+  grid-column-start: 1;
+  grid-row-start: 1; }
+
+.main-restaurants :nth-child(2) {
+  grid-column-start: 2;
+  grid-row-start: 1; }
+
+.main-restaurants :nth-child(3) {
+  grid-column-start: 1;
+  grid-row-start: 2; }
+
+.main-restaurants :nth-child(4) {
+  grid-column-start: 2;
+  grid-row-start: 2; }
 
 .main-restaurants__card {
   background-color: #ffffff;
+  width: auto;
   border-radius: 2rem;
-  width: 35%;
-  height: 20rem; }
+  position: relative; }
 
 .main-restaurants__card__link {
   text-decoration: none;
@@ -593,9 +603,9 @@ path {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  position: relative;
-  bottom: 20rem;
-  left: 32rem; }
+  position: absolute;
+  right: 1rem;
+  top: 1rem; }
 
 @media screen and (max-width: 768px) {
   .main-menu {
@@ -786,7 +796,7 @@ path {
 
 .main-restaurant__bands .main-restaurant__band,
 .main-restaurant__bands .main-restaurant__bands__subtitle {
-  animation: apparition 1s ease-out; }
+  animation: apparition 2s ease-in-out; }
 
 @keyframes apparition {
   from {
@@ -812,7 +822,7 @@ path {
   background-color: white;
   width: 30%;
   height: 5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-left: 2rem; }
@@ -836,9 +846,6 @@ path {
   bottom: 2rem;
   display: none; }
 
-/*
-*{outline: solid 1px red;}
-*/
 .main-restaurant__band__check {
   width: 12%;
   height: 5rem;
@@ -848,10 +855,11 @@ path {
   position: relative;
   left: 32.2rem;
   bottom: 4.2rem;
+  font-size: 2rem;
   color: #eef5f3;
   background-color: #99E2D0;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   animation: slide-left; }
 
 @keyframes slide-left {
@@ -864,13 +872,10 @@ path {
 
 @media screen and (max-width: 768px) {
   .main-restaurant__bands__subtitle {
-    width: 100%;
+    width: 60px;
+    height: 2.5rem;
     font-size: 2rem;
     font-weight: 600;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: center; }
   .main-restaurant__bands {
     width: 60%;
@@ -901,12 +906,8 @@ path {
 
 @media screen and (max-width: 425px) {
   .main-restaurant__bands__subtitle {
-    width: 100%;
+    width: 50px;
     font-size: 1.5rem;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: start; }
   .main-restaurant__bands {
     width: 95%;
@@ -940,13 +941,13 @@ path {
   cursor: pointer;
   position: relative;
   left: 70rem;
-  bottom: 3rem; }
+  bottom: 2rem; }
 
 @media screen and (max-width: 768px) {
   .heart-menu {
     position: relative;
     left: 35rem;
-    bottom: 3rem; } }
+    bottom: 2rem; } }
 
 @media screen and (max-width: 425px) {
   .heart-menu {
@@ -973,8 +974,7 @@ path {
   justify-content: space-around; }
 
 .footer-list__logo {
-  padding-left: 3rem;
-  padding-top: 2rem; }
+  margin: 2rem; }
 
 .footer-list .footer-list__links {
   line-height: 2rem; }
@@ -1012,7 +1012,7 @@ path {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 5rem; } }
+    margin-left: 1rem; } }
 
 .button {
   width: 10%;
@@ -1146,7 +1146,7 @@ path {
   animation: spin 1s linear infinite; }
 
 .loader__circles:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1159,7 +1159,7 @@ path {
   animation: spin 5s linear infinite; }
 
 .loader__circles:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   left: 12px;
@@ -1167,7 +1167,7 @@ path {
   right: 12px;
   border-radius: 50px;
   border: 4px solid transparent;
-  border-top-color: #99E2D0;
+  border-top-color: #99e2d0;
   opacity: 0.5;
   animation: spinrever 10s linear infinite; }
 
@@ -1182,3 +1182,26 @@ path {
     transform: rotate(0deg); }
   100% {
     transform: rotate(-360deg); } }
+
+.header-loade {
+  animation: fondue 10s; }
+
+.main-loade {
+  animation: fondue 10s; }
+
+.footer-loade {
+  animation: fondue 10s; }
+
+@keyframes fondue {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.5; }
+  80% {
+    opacity: 0.7; }
+  90% {
+    opacity: 0.9; }
+  100% {
+    opacity: 1; } }

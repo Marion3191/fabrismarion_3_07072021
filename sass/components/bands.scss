@@ -1,7 +1,7 @@
 .main-restaurant__bands {
   .main-restaurant__band,
   .main-restaurant__bands__subtitle {
-    animation: apparition 1s ease-out;
+    animation: apparition 2s ease-in-out;
   }
 }
 
@@ -35,7 +35,7 @@
 background-color: white; 
 width: 30%;
 height: 5rem;
-border-radius: 2rem;
+border-radius: 1rem;
 margin-right: auto;
 margin-bottom: 2rem;
 margin-left: 2rem;
@@ -62,9 +62,8 @@ margin-left: 2rem;
   bottom: 2rem;
 display: none;
 }
-/*
-*{outline: solid 1px red;}
-*/
+
+
 .main-restaurant__band__check{
   width: 12%;
   height: 5rem;
@@ -74,13 +73,13 @@ display: none;
   position: relative;
   left: 32.2rem;
   bottom:4.2rem ;
+  font-size: 2rem;
   color: #eef5f3;
   background-color: #99E2D0;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   animation: slide-left;
 }
-
 @keyframes slide-left {
 0% {
   transform: translateX(0);
@@ -97,13 +96,10 @@ display: none;
 
 @media screen and (max-width:768px){
   .main-restaurant__bands__subtitle{
-    width:100%;
+    width:60px;
+    height: 2.5rem;
     font-size: 2rem;
     font-weight: 600;
-    text-decoration-line: underline;
-    text-decoration-style: solid ;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: center;
   }
   .main-restaurant__bands{
@@ -144,12 +140,8 @@ display: none;
 @media screen and (max-width:425px){
 
   .main-restaurant__bands__subtitle{
-    width:100%;
+    width:50px;
     font-size: 1.5rem;
-    text-decoration-line: underline;
-    text-decoration-style: solid ;
-    text-decoration-color: #99E2D0;
-    text-decoration-thickness: 3px;
     text-align: start;
   }
  
