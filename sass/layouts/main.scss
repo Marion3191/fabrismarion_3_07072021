@@ -148,7 +148,6 @@
     top: 1rem;
 }
 
-
 @media screen and (max-width:768px){
 
     .main-menu{
@@ -183,16 +182,6 @@
         font-size: 1rem;
     }
     
-    .main-restaurants__card{
-        width: 45%;
-        height: 20rem; 
-    }
-    
-    .main-restaurants__card__link__text{
-        position:relative; 
-        bottom: 20rem;
-        left: 16rem;
-    }
 }
 
 @media screen and (max-width:425px){

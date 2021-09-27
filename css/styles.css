@@ -623,14 +623,7 @@ path {
     padding-right: 0.2rem;
     font-size: 1.2rem; }
   .main-menu__button__text {
-    font-size: 1rem; }
-  .main-restaurants__card {
-    width: 45%;
-    height: 20rem; }
-  .main-restaurants__card__link__text {
-    position: relative;
-    bottom: 20rem;
-    left: 16rem; } }
+    font-size: 1rem; } }
 
 @media screen and (max-width: 425px) {
   .main-menu {
