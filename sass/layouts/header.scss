@@ -1,4 +1,5 @@
-@import "../components/button-header.scss";
+@import "../components/button.scss";
+@import "../components/loader.scss";
 .header-top{
   text-align: center;
 }
@@ -52,7 +53,7 @@
   height: 5rem;
   font-size: 1.2rem;
   background-color: #e6e4e4;
-  padding-top: black 5px solid;
+  padding-top:5px;
 }
 
 .header-top__map__icon {
@@ -71,7 +72,7 @@
 .header-top__title {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   text-align: center;
 }

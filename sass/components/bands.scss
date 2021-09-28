@@ -1,10 +1,41 @@
-.main-restaurant__bands {
-  .main-restaurant__band,
-  .main-restaurant__bands__subtitle {
-    animation: apparition 2s ease-in-out;
-  }
+.main-restaurant__band:nth-child(1) {
+  animation: apparition 1s ease-in-out;
+}
+.main-restaurant__band:nth-child(2) {
+  animation: apparition 1s ease-in-out;
+}
+.main-restaurant__band:nth-child(3) {
+  animation: apparition 1s ease-in-out;
+}
+.main-restaurant__band:nth-child(4) {
+  animation: apparition 1s ease-in-out;
 }
 
+.main-restaurant__band:nth-child(5) {
+  animation: apparition 2s ease-in-out;
+}
+.main-restaurant__band:nth-child(6) {
+  animation: apparition 2s ease-in-out;
+}
+.main-restaurant__band:nth-child(7) {
+  animation: apparition 2s ease-in-out;
+}
+.main-restaurant__band:nth-child(8) {
+  animation: apparition 2s ease-in-out;
+}
+
+.main-restaurant__band:nth-child(9) {
+  animation: apparition 3s ease-in-out;
+}
+.main-restaurant__band:nth-child(10) {
+  animation: apparition 3s ease-in-out;
+}
+.main-restaurant__band:nth-child(11) {
+  animation: apparition 3s ease-in-out;
+}
+.main-restaurant__band:nth-child(12) {
+  animation: apparition 3s ease-in-out;
+}
 @keyframes apparition {
   from {
     opacity: 0;
@@ -16,163 +47,171 @@
   }
 }
 
-
 .main-restaurant__bands{
   display: flex;
-  flex-wrap: wrap; 
+ justify-content: space-between;
+ flex-direction: column;
 }
 
-.main-restaurant__bands__subtitle{
+.main-restaurant__band{
+  width:25%;
+  height: 5rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+ justify-content:space-between;
+}
+.main-restaurant__bands__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
   height: 2rem;
   width: 48px;
   margin-right: 1rem;
-  border-bottom:5px solid #99E2D0;
-}
+  border-bottom: 5px solid #99E2D0;
+ }
 
-.main-restaurant__band{
-background-color: white; 
-width: 30%;
-height: 5rem;
-border-radius: 1rem;
-margin-right: auto;
-margin-bottom: 2rem;
-margin-left: 2rem;
-}
-
-.main-restaurant__band__title{
-  margin-left: 2rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 3rem;
-}
-
-.main-restaurant__band__text{
-  padding-left: 2rem;
-  font-size: 1.2rem;
-}
-
+ .main-restaurant__band__title{
+   display: flex;
+   justify-content:center;
+   width: 50%;
+   font-size: 1.5rem;
+ }
+ 
 .main-restaurant__band__price{
-  width: 8%;
-  font-size: 1.2rem;
-  font-weight: 600;
-  position: relative;
-  left: 32rem;
-  bottom: 2rem;
-display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
-
 
 .main-restaurant__band__check{
-  width: 12%;
-  height: 5rem;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  position: relative;
-  left: 32.2rem;
-  bottom:4.2rem ;
-  font-size: 2rem;
-  color: #eef5f3;
   background-color: #99E2D0;
+  color: white;
+
+  font-size: 2rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  animation: slide-left;
+  overflow: hidden;
+}
+
+.main-restaurant__band__check:hover{
+  animation: slide-left 0.5s;
+}
+.fasfa-check-circle{
+  transform: rotate (360deg);
+  transform-origin: center;
 }
 @keyframes slide-left {
-0% {
-  transform: translateX(0);
-          transform: translateX(0);
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
 }
-100% {
-  transform: translateX(-50px);
-          transform: translateX(-100px);
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
 }
+@keyframes rotate {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
 }
 
 
-  
-
-@media screen and (max-width:768px){
-  .main-restaurant__bands__subtitle{
-    width:60px;
+@media screen and (max-width: 768px) {
+  .main-restaurant__bands__subtitle {
+    width: 60px;
     height: 2.5rem;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
   }
-  .main-restaurant__bands{
+  .main-restaurant__bands {
     width: 60%;
-   margin: auto;
+    margin: auto;
   }
 
-  .main-restaurant__band{ 
+  .main-restaurant__band {
     width: 100%;
     height: 8rem;
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    }
+  }
 
-  .main-restaurant__band__title{
+  .main-restaurant__band__title {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 3rem;
     text-align: center;
   }
-  .main-restaurant__band__text{
+  .main-restaurant__band__text {
     padding-left: 2rem;
     font-size: 1.2rem;
     line-height: 3rem;
     text-align: center;
   }
-  .main-restaurant__band__price{
+  .main-restaurant__band__price {
     width: 20%;
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;
     left: 13rem;
-    top:0.5rem;
+    top: 0.5rem;
   }
 }
 
-@media screen and (max-width:425px){
-
-  .main-restaurant__bands__subtitle{
-    width:50px;
+@media screen and (max-width: 425px) {
+  .main-restaurant__bands__subtitle {
+    width: 50px;
     font-size: 1.5rem;
     text-align: start;
   }
- 
-  .main-restaurant__bands{
+
+  .main-restaurant__bands {
     width: 95%;
     margin: auto;
   }
 
-  .main-restaurant__band{ 
+  .main-restaurant__band {
     height: 5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    }
-    
-  .main-restaurant__band__title{
+  }
+
+  .main-restaurant__band__title {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 3rem;
     text-align: start;
   }
-  .main-restaurant__band__text{
+  .main-restaurant__band__text {
     font-size: 1rem;
     line-height: 2rem;
     text-align: start;
   }
-  .main-restaurant__band__price{
+  .main-restaurant__band__price {
     width: 10%;
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;
     left: 22rem;
-   top: -3rem;
+    top: -3rem;
   }
 }

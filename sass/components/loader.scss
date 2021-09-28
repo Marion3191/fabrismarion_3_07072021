@@ -8,7 +8,7 @@
   position: relative;
   vertical-align: middle;
   opacity: 0;
-  transition: opacity 10s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 .loader__circles {
   border-radius: 50px;
@@ -28,7 +28,7 @@
   border: 4px solid transparent;
   border-top-color: #ff79da;
   opacity: 0.8;
-  animation: spin 5s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 .loader__circles:before {
@@ -42,7 +42,7 @@
   border: 4px solid transparent;
   border-top-color: #99e2d0;
   opacity: 0.5;
-  animation: spinrever 10s linear infinite;
+  animation: spinrever 3s linear infinite;
 }
 
 @keyframes spin {
@@ -64,13 +64,13 @@
 }
 
 .header-loade {
-  animation: fondue 10s;
+  animation: fondue 4s;
 }
 .main-loade {
-  animation: fondue 10s;
+  animation: fondue 4s;
 }
 .footer-loade {
-  animation: fondue 10s;
+  animation: fondue 4s;
 }
 @keyframes fondue {
   0% {
