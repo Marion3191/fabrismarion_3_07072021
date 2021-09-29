@@ -92,3 +92,54 @@
     opacity: 1;
   }
 }
+@media screen and (max-width:768px){
+  .loader__circles--loader {
+    position: absolute;
+    top: 20rem;
+    left: 23rem;
+  }
+
+  .loader__circles:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .loader__circles:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+  } 
+}
+
+@media screen and (max-width:425px){
+  .loader__circles--loader {
+    position: absolute;
+    top: 20rem;
+    left: 13rem;
+  }
+
+  .loader__circles:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .loader__circles:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+  } 
+}
