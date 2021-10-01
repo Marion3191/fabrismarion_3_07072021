@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "sass": "node-sass sass/styles.scss css/styles.css",
-      "sass:dev": "node-sass -w sass/styles.scss css/styles.css"
+      "clear": "rm -rf css/styles.css",
+      "sass": "npm run clear && node-sass sass/styles.scss css/styles.css",
+      "sass:dev": "npm run clear && node-sass -w sass/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",

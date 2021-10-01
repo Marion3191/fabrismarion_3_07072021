@@ -1,27 +1,26 @@
 .heart-menu{
-    width: 10%;
     fill: transparent;
     stroke: black;
     stroke-width: 20;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     left: 70rem;
-    bottom: 2rem;
+    top: 4rem;
   }
 
   @media screen and (max-width:768px){
     .heart-menu{
-      position: relative;
+      position: absolute;
       left: 35rem;
-      bottom: 2rem;
+      top: 2rem;
     }
   }
 
   @media screen and (max-width:425px){
     .heart-menu{
-      position: relative;
-      left: 20rem;
-      bottom: 2rem;
+      position:absolute;
+      left: 22rem;
+      top: 2rem;
     }
    
 

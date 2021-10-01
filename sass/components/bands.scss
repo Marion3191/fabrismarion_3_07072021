@@ -47,92 +47,99 @@
   }
 }
 
-.main-restaurant__bands{
+.main-restaurant__bands {
   display: flex;
- justify-content: space-between;
- flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+
 }
 
-.main-restaurant__band{
-  width:25%;
-  height: 5rem;
+.main-restaurant__band {
+  width:80%;
+  height:6rem;
   background-color: white;
   border-radius: 1rem;
   display: flex;
- justify-content:space-between;
+  justify-content: space-between;
 }
+
+
 .main-restaurant__bands__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
   height: 2rem;
   width: 48px;
   margin-right: 1rem;
-  border-bottom: 5px solid #99E2D0;
- }
+  border-bottom: 5px solid #99e2d0;
+}
 
- .main-restaurant__band__title{
-   display: flex;
-   justify-content:center;
-   width: 50%;
-   font-size: 1.5rem;
- }
- 
-.main-restaurant__band__price{
+
+
+.main-restaurant__band__info__title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  height: 3rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-restaurant__band__info__text{
+  height: 3rem;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-restaurant__band__price {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
+  white-space: nowrap;
 }
 
-.main-restaurant__band__check{
+.main-restaurant__band__check-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #99E2D0;
-  color: white;
-
-  font-size: 2rem;
+  background-color: #99e2d0;
+  opacity: 0;
+  width: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  overflow: hidden;
+  transition: 1s;
 }
 
-.main-restaurant__band__check:hover{
-  animation: slide-left 0.5s;
+.main-restaurant__band__check-container__check {
+  color: white;
+  font-size: 2rem;
 }
-.fasfa-check-circle{
-  transform: rotate (360deg);
-  transform-origin: center;
+
+.main-restaurant__band:hover .main-restaurant__band__check-container {
+  width: 200px;
+  opacity: 1;
 }
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
+
+.main-restaurant__band:hover .main-restaurant__band__check-container__check {
+  animation: rotate 0.5s;
 }
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
-}
+
 @keyframes rotate {
-  from{
-      transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
   }
-  to{
-      transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
+.button-main{
+  margin-top: 2rem;
+  width: 100%;
+}
 
 @media screen and (max-width: 768px) {
   .main-restaurant__bands__subtitle {
@@ -143,37 +150,33 @@
     text-align: center;
   }
   .main-restaurant__bands {
-    width: 60%;
+    width: 80%;
     margin: auto;
+    flex-direction: column;
   }
 
   .main-restaurant__band {
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
 
-  .main-restaurant__band__title {
+  .main-restaurant__band__info__title {
     font-size: 1.5rem;
     font-weight: 600;
-    line-height: 3rem;
-    text-align: center;
+    padding-top: 1rem;
+    width:100%;
   }
-  .main-restaurant__band__text {
-    padding-left: 2rem;
+  .main-restaurant__band__info__text {
     font-size: 1.2rem;
-    line-height: 3rem;
-    text-align: center;
+    width: 100%;
   }
   .main-restaurant__band__price {
-    width: 20%;
     font-size: 1.2rem;
     font-weight: 600;
-    position: relative;
-    left: 13rem;
-    top: 0.5rem;
+   
   }
 }
 
@@ -184,34 +187,21 @@
     text-align: start;
   }
 
-  .main-restaurant__bands {
-    width: 95%;
-    margin: auto;
+.main-restaurant__bands{
+    width: 100%;
   }
 
   .main-restaurant__band {
-    height: 5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+   width: 95%;
+   height: 5rem;
   }
 
-  .main-restaurant__band__title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 3rem;
-    text-align: start;
-  }
-  .main-restaurant__band__text {
+  .main-restaurant__band__info__title {
     font-size: 1rem;
-    line-height: 2rem;
-    text-align: start;
+    font-weight: 900;
   }
-  .main-restaurant__band__price {
-    width: 10%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    position: relative;
-    left: 22rem;
-    top: -3rem;
+  .main-restaurant__band__info__text {
+    font-size: 1rem;
+    
   }
 }
