@@ -3,7 +3,6 @@
     height: 5rem;
     display: flex;
     align-content: center;
-    padding-bottom: 2rem;
  }
  
  .header-top__link__menu__icon{
@@ -15,9 +14,7 @@
  }
  
  .header-logo__menu{
-     margin: auto;
-     padding-top: var(--spacing-base);
-     margin-bottom: var(--spacing-xs);
+    margin: auto;
  }
 
   @media screen and (max-width:425px){

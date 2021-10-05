@@ -5,24 +5,28 @@
 }
 
 .header-top__map{
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding-top: 1rem;
   background-color: #f2f2f2;
 }
 
 .header-top__map__icon{
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 2rem;
 }
 
 .header-top____map__text{
   font-size: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
+  font-weight: 900;
 }
 
 .header-top__title{
   font-size: 1.5rem;
-  line-height: 5rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .header-top__text--text{
@@ -40,9 +44,12 @@
 
 .header-top__logo {
   width: 50%;
-  height: 4rem;
-  padding-top: var(--spacing-base);
-  padding-bottom: var(--spacing-base);
+  padding-top:2rem;
+  padding-bottom: 1rem;
+}
+
+.header-top____map__text{
+font-size: 1.2rem;
 }
 
 .header-top__map {
@@ -57,24 +64,26 @@
 }
 
 .header-top__map__icon {
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding-right: 1rem;
 }
 
 .header-top__text {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background-color: #f6f5f5;
   width: 100%;
+  height: 20rem;
 }
 
 .header-top__title {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 55%;
   font-size: 1.5rem;
   font-weight: 900;
-  text-align: center;
+ 
 }
 
 .header-top__text--text {

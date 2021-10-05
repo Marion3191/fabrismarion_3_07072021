@@ -168,7 +168,7 @@ body {
 .main-restaurant__card {
   background-color: #f2f2f2;
   width: 100%;
-  height: 45rem;
+  height: 35rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 2rem;
   position: relative;
@@ -181,10 +181,11 @@ body {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 900; }
 
 .main-restaurant-title__card__icon {
   position: relative;
@@ -220,7 +221,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 2rem;
-  bottom: 0.5rem; }
+  bottom: 1rem; }
 
 svg {
   overflow: visible;
@@ -294,7 +295,7 @@ path {
   cursor: pointer;
   position: absolute;
   left: 70rem;
-  top: 4rem; }
+  top: 2.5rem; }
 
 @media screen and (max-width: 768px) {
   .heart-menu {
@@ -312,8 +313,7 @@ path {
   width: 100%;
   height: 5rem;
   display: flex;
-  align-content: center;
-  padding-bottom: 2rem; }
+  align-content: center; }
 
 .header-top__link__menu__icon {
   font-size: 1.5rem;
@@ -323,9 +323,7 @@ path {
   left: 1rem; }
 
 .header-logo__menu {
-  margin: auto;
-  padding-top: var(--spacing-base);
-  margin-bottom: var(--spacing-xs); }
+  margin: auto; }
 
 @media screen and (max-width: 425px) {
   .header-top__menu {
@@ -344,14 +342,15 @@ path {
     text-align: center; } }
 
 .main-menu {
-  margin-top: 5rem;
   width: 100%;
   height: 15rem; }
 
 .main-menu__title {
   font-size: 2rem;
+  font-weight: 900;
   margin-left: 2rem;
-  margin-bottom: 3rem; }
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
 
 .main-menu__button {
   display: flex;
@@ -394,6 +393,10 @@ path {
 .main-menu__button__icon.fas.fa-store {
   color: #9356dc; }
 
+.main-menu__button__text {
+  font-weight: 900;
+  font-size: 1.5rem; }
+
 .main-menu-button {
   border: none;
   background-color: #ffffff;
@@ -404,7 +407,8 @@ path {
   background-color: #efe4fd; }
 
 .main-restaurants {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  height: 44rem; }
 
 .main-restaurants__title {
   font-size: 2rem;
@@ -448,11 +452,14 @@ path {
 
 .main-restaurants__card__link__title {
   font-size: 1.5rem;
+  font-weight: 900;
   margin-left: 3rem;
-  line-height: 4rem; }
+  line-height: 3rem; }
 
 .main-restaurants__card__link__subtitle {
   font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
   margin-left: 3rem; }
 
 .main-restaurants__card__link__image {
@@ -463,8 +470,10 @@ path {
   height: 12rem; }
 
 .main-restaurants__card__link__text {
+  font-size: 1rem;
+  font-weight: 600;
   background-color: #99E2D0;
-  color: #21b691;
+  color: #043f30;
   padding: 0.5rem;
   border-radius: 5px;
   position: absolute;
@@ -491,7 +500,9 @@ path {
     padding-right: 0.2rem;
     font-size: 1.2rem; }
   .main-menu__button__text {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .main-restaurants {
+    height: 50rem; } }
 
 @media screen and (max-width: 425px) {
   .main-menu {
@@ -500,7 +511,7 @@ path {
     margin: auto;
     margin-top: 2rem; }
   .main-menu__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 2rem; }
   .main-menu__button {
     display: flex;
@@ -542,16 +553,16 @@ path {
   .main-menu-button {
     border: none;
     background-color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 500; }
+    font-size: 1.5rem; }
   .main-menu-button--background {
     background-color: #efe4fd; }
   .main-restaurants {
     background-color: #f2f2f2;
     width: 100%;
-    height: 100rem; }
+    height: 100rem;
+    font-weight: 900; }
   .main-restaurants__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem; }
@@ -569,11 +580,11 @@ path {
     text-decoration: none;
     color: #101010; }
   .main-restaurants__card__link__title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
     line-height: 3rem; }
   .main-restaurants__card__link__subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 1rem; }
   .main-restaurants__card__link__image {
     object-fit: cover;
@@ -591,8 +602,7 @@ path {
   background-color: #313131;
   color: white;
   text-align: start;
-  width: 100%;
-  height: 15rem; }
+  width: 100%; }
 
 .footer-list__links {
   list-style-type: none;
@@ -601,7 +611,7 @@ path {
   justify-content: space-around; }
 
 .footer-list__logo {
-  margin: 2rem; }
+  padding: 2rem; }
 
 .footer-list .footer-list__links {
   line-height: 2rem; }
@@ -625,7 +635,6 @@ path {
     justify-content: space-around; }
   .footer-list__links__link {
     padding-left: 1.5rem;
-    line-height: 4rem;
     text-decoration: none; } }
 
 @media screen and (max-width: 425px) {
@@ -633,8 +642,7 @@ path {
     background-color: #313131;
     color: white;
     text-align: start;
-    width: 100%;
-    height: 20rem; }
+    width: 100%; }
   .footer-list__links {
     display: flex;
     flex-direction: column;
@@ -788,21 +796,25 @@ path {
   text-align: center; }
 
 .header-top__map {
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding-top: 1rem;
   background-color: #f2f2f2; }
 
 .header-top__map__icon {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 2rem; }
 
 .header-top____map__text {
   font-size: 1.5rem;
-  padding-bottom: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 900; }
 
 .header-top__title {
   font-size: 1.5rem;
-  line-height: 5rem; }
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .header-top__text--text {
   font-size: 1.2rem;
@@ -816,9 +828,10 @@ path {
     align-items: center; }
   .header-top__logo {
     width: 50%;
-    height: 4rem;
-    padding-top: var(--spacing-base);
-    padding-bottom: var(--spacing-base); }
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+  .header-top____map__text {
+    font-size: 1.2rem; }
   .header-top__map {
     display: flex;
     align-items: center;
@@ -829,20 +842,21 @@ path {
     background-color: #e6e4e4;
     padding-top: 5px; }
   .header-top__map__icon {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding-right: 1rem; }
   .header-top__text {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: #f6f5f5;
-    width: 100%; }
+    width: 100%;
+    height: 20rem; }
   .header-top__title {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    width: 55%;
     font-size: 1.5rem;
-    font-weight: 900;
-    text-align: center; }
+    font-weight: 900; }
   .header-top__text--text {
     margin-top: 0%;
     text-align: center;
@@ -1015,46 +1029,52 @@ path {
 .main-restaurant__bands {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 32%; }
+  justify-content: space-around;
+  margin: auto;
+  width: 33%;
+  height: 25rem; }
 
 .main-restaurant__band {
-  width: 80%;
-  height: 6rem;
+  height: 5rem;
   background-color: white;
   border-radius: 1rem;
+  box-shadow: 1px 1px 1px 1px #e9e8e8;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .main-restaurant__bands__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
   height: 2rem;
   width: 48px;
-  margin-right: 1rem;
-  border-bottom: 5px solid #99e2d0; }
+  border-bottom: 3px solid #99e2d0; }
+
+.main-restaurant__band__info {
+  overflow: hidden; }
 
 .main-restaurant__band__info__title {
   font-size: 1.2rem;
   font-weight: 900;
   height: 3rem;
   padding-top: 1rem;
-  overflow: hidden;
+  padding-left: 1rem;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
 .main-restaurant__band__info__text {
   height: 3rem;
+  padding-left: 1rem;
   font-size: 1rem;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
 .main-restaurant__band__price {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   width: 50%;
+  font-weight: 900;
+  font-size: 1.2rem;
   white-space: nowrap; }
 
 .main-restaurant__band__check-container {
@@ -1093,7 +1113,7 @@ path {
   .main-restaurant__bands__subtitle {
     width: 60px;
     height: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center; }
   .main-restaurant__bands {
@@ -1124,9 +1144,10 @@ path {
     font-size: 1.5rem;
     text-align: start; }
   .main-restaurant__bands {
-    width: 100%; }
-  .main-restaurant__band {
     width: 95%;
+    margin: auto; }
+  .main-restaurant__band {
+    width: 100%;
     height: 5rem; }
   .main-restaurant__band__info__title {
     font-size: 1rem;
