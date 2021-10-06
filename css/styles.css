@@ -285,8 +285,8 @@ path {
 @media screen and (max-width: 768px) {
   .heart-menu {
     position: absolute;
-    left: 35rem;
-    top: 1.5rem; } }
+    left: 38rem;
+    top: 1rem; } }
 
 @media screen and (max-width: 425px) {
   .heart-menu {
@@ -1154,10 +1154,4 @@ path {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   box-shadow: 4px 4px 4px 4px #5e5d5d; }
 
-@media screen and (max-width: 768px) {
-  .button {
-    width: 30%; } }
 
-@media screen and (max-width: 425px) {
-  .button {
-    width: 50%; } }
