@@ -1007,9 +1007,9 @@ path {
 .main-restaurant__bands {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 25rem;
-  width: 33%; }
+  width: 30%; }
 
 .main-restaurant__band {
   height: 5rem;
@@ -1135,9 +1135,6 @@ path {
     font-weight: 900; }
   .main-restaurant__band__info__text {
     font-size: 1rem; } }
-
-* {
-  outline: solid 1px red; }
 
 .button {
   height: 3rem;

@@ -50,9 +50,10 @@
 .main-restaurant__bands{
   display: flex;
   flex-direction: column; 
-  justify-content: space-around;
+  
+  justify-content: space-evenly;
   height: 25rem; 
-  width: 33%;
+  width: 30%;
 }
 
 .main-restaurant__band {
@@ -214,4 +215,3 @@
     font-size: 1rem;
   }
 }
-*{outline: solid 1px red;}
