@@ -12,29 +12,29 @@
 }
 
 .main-restaurant__band:nth-child(5) {
-  animation: apparition 2s ease-in-out;
+  animation: apparition 3s ease-in-out;
 }
 .main-restaurant__band:nth-child(6) {
-  animation: apparition 2s ease-in-out;
+  animation: apparition 3s ease-in-out;
 }
 .main-restaurant__band:nth-child(7) {
-  animation: apparition 2s ease-in-out;
+  animation: apparition 3s ease-in-out;
 }
 .main-restaurant__band:nth-child(8) {
-  animation: apparition 2s ease-in-out;
+  animation: apparition 3s ease-in-out;
 }
 
 .main-restaurant__band:nth-child(9) {
-  animation: apparition 3s ease-in-out;
+  animation: apparition 5s ease-in-out;
 }
 .main-restaurant__band:nth-child(10) {
-  animation: apparition 3s ease-in-out;
+  animation: apparition 5s ease-in-out;
 }
 .main-restaurant__band:nth-child(11) {
-  animation: apparition 3s ease-in-out;
+  animation: apparition 5s ease-in-out;
 }
 .main-restaurant__band:nth-child(12) {
-  animation: apparition 3s ease-in-out;
+  animation: apparition 5s ease-in-out;
 }
 @keyframes apparition {
   from {
@@ -174,15 +174,16 @@
   }
 
   .main-restaurant__band__info__title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     width: 100%;
   }
+  
   .main-restaurant__band__info__text {
     font-size: 1.2rem;
     width: 100%;
   }
+
   .main-restaurant__band__price {
     font-size: 1.2rem;
     font-weight: 600;

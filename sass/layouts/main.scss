@@ -16,6 +16,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: space-around;
     margin-right: 1rem;
 }
 
@@ -35,9 +36,11 @@
 
 .main-menu__button__button{
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     align-self: center;
     justify-content: center;
+    text-align: center;
     border-radius: 1rem;
     box-shadow: 1px 2px 2px 2px #dddada;;
     width: 50%;
