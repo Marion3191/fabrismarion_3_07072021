@@ -25,19 +25,25 @@
     <main class="main-restaurant">
       <img class="main-restaurant__image" src="../images/A-la-francaise.jpg" alt="Alafrancaise" />
       <section class="main-restaurant__card">
-          <h1 class="main-restaurant__card__title">À la française</h1>
-            <svg class="heart-background" viewBox="0 0 312 312" width="100">
-              <path
-                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-              />
-              <defs>
-                <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                  <stop offset="5%" stop-color="#9356dc" />
-                  <stop offset="95%" stop-color="#ff79da" />
-                </linearGradient>
-              </defs>
+        <div class="main-restaurant__card__container">
+        <h1 class="main-restaurant__card__title">À la française</h1>
+        <div class="main-restaurant__card__container__heart">
+        <div class="heart-menu">
+            <svg class="heart-main" viewBox="0 0 805 805" width="100">
+                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
             </svg>
-          
+            <svg class="heart-background" viewBox="0 0 312 312" width="100">
+                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                <defs>
+                    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                        <stop offset="5%" stop-color="#9356dc" />
+                        <stop offset="95%" stop-color="#ff79da" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    </div>
        
         <article class="main-restaurant__bands">
           <h2 class="main-restaurant__bands__subtitle">Entrées</h2>
@@ -139,7 +145,7 @@
               </div>
           </div>
         </article>
-        <article class="button-main"> <input class="button" type="button" value="Commander" /> </article>
+       <input class="button" type="button" value="Commander" />
       </section>
     </main>
 
