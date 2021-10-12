@@ -4,22 +4,5 @@
   stroke-width: 20;
   cursor: pointer;
   position:absolute;
-  right: 45rem;
-  top:1.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  .heart-menu {
-    position: absolute;
-    left: 38rem;
-    top: 1rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .heart-menu {
-    position: absolute;
-    left: 22rem;
-    top: 1.5rem;
-  }
-}

@@ -7,21 +7,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Shrikhand&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css"/>
         <title>Ohmyfood</title>
     </head>
    
     <body>
         <header class="header-top__menu">
-            <a class="header-top__link__menu" href="index.html">
+            <a class="header-top__link__menu" href="../index.html">
                 <i class="header-top__link__menu__icon fas fa-arrow-left"></i></a>
-            <img class="header-logo__menu" src="images/ohmyfood@2x.svg" alt="ohmyfood">
+            <img class="header-logo__menu" src="../images/ohmyfood@2x.svg" alt="ohmyfood">
         </header>
 
         <main class="main-restaurant">
-            <img class="main-restaurant__image" src="images/La-note-enchantée.jpg" alt="Lanoteenchantée"/>
+            <img class="main-restaurant__image" src="../images/La-note-enchantée.jpg" alt="Lanoteenchantée"/>
             <section class="main-restaurant__card">
+                <div class="main-restaurant__card__container">
                 <h1 class="main-restaurant__card__title">La note enchantée</h1>
+                <div class="main-restaurant__card__container__heart">
                 <div class="heart-menu">
                     <svg class="heart-main" viewBox="0 0 805 805" width="100">
                         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
@@ -36,6 +38,8 @@
                         </defs>
                     </svg>
                 </div>
+            </div>
+            </div>
                 <article class="main-restaurant__bands">
                     <h2 class="main-restaurant__bands__subtitle">Entrées</h2>
                     <div class="main-restaurant__band">
@@ -149,7 +153,7 @@
                         </div>
                     </div>
                   </article>
-                  <article class="button-main">  <input class="button" type="button" value="Commander" /> </article>
+              <input class="button-menu" type="button" value="Commander" />
             </section>
         </main>
 

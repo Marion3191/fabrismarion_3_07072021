@@ -36,6 +36,9 @@
 .main-restaurant__band:nth-child(12) {
   animation: apparition 5s ease-in-out;
 }
+.main-restaurant__band:nth-child(13) {
+  animation: apparition 5s ease-in-out;
+}
 @keyframes apparition {
   from {
     opacity: 0;
@@ -49,11 +52,11 @@
 
 .main-restaurant__bands{
   display: flex;
-  flex-direction: column; 
-  
+  flex-direction: column;
   justify-content: space-evenly;
   height: 25rem; 
-  width: 30%;
+  width: 32%;
+  margin: auto;
 }
 
 .main-restaurant__band {
@@ -108,7 +111,7 @@
   font-weight: 900;
   font-size: 1.2rem;
   white-space: nowrap;
-  width: 85%;
+  width: 30%;
 }
 
 .main-restaurant__band__check-container {
@@ -147,35 +150,24 @@
 }
 
 .button-main {
-  margin-top: 2rem;
+  margin: 1rem;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .main-restaurant__bands__subtitle {
-    width: 60px;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-  }
-  .main-restaurant__bands {
+  .main-restaurant__bands{
     width: 100%;
-    margin: auto;
-    flex-direction: column;
   }
-
   .main-restaurant__band {
-    width: 100%;
+    width: 95%;
     height: 6rem;
     margin: auto;
-    margin-bottom: 2rem;
     margin-top: 2rem;
   }
 
   .main-restaurant__band__info__title {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 900;
     width: 100%;
   }
   
@@ -216,3 +208,4 @@
     font-size: 1rem;
   }
 }
+
