@@ -55,7 +55,8 @@
 .main-menu__button__icon {
   font-size: 1.5rem;
   color: grey;
-  padding-right: $spacing-base;
+  padding-right:1rem;
+  margin-left: 1rem;
 }
 
 .main-menu__button__icon.fas.fa-store {
@@ -268,7 +269,8 @@
   .main-menu__button__icon {
     font-size: 1.5rem;
     color: grey;
-    padding-right: 2rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
   }
 
   .main-menu__button__icon.fas.fa-store {
