@@ -33,10 +33,7 @@ path {
 }
 
 .heart-main:hover path {
-  animation: stroke-animation 2s ease-in-out; 
-  transition:all 0.3s linear 0s;
-  width: 100%;
-  height: 0;
+  animation: stroke-animation 1.5s ease-in-out; 
 }
 
 @keyframes stroke-animation {
@@ -47,6 +44,7 @@ path {
   30% {
     stroke-dashoffset: 0;
     stroke: transparent;
+    fill: url(#myGradient);
     }
   60% {
     stroke-dashoffset: 0;

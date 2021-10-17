@@ -250,7 +250,7 @@ body {
   width: 100%;
   height: 5rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
   padding-top: 2rem; }
 
@@ -264,17 +264,18 @@ body {
   .main-restaurant__card {
     display: flex;
     flex-direction: column;
-    height: 135rem; } }
+    height: 115rem; } }
 
 @media screen and (max-width: 425px) {
   .main-restaurant__card {
     width: 100%;
-    height: 125rem; }
+    height: 105rem; }
   .main-restaurant__card__title {
     display: flex;
     justify-content: start;
     font-size: 2rem;
-    font-weight: 900; } }
+    font-weight: 900;
+    padding-left: 1rem; } }
 
 *,
 *::before,
@@ -308,10 +309,7 @@ path {
   stroke: none; }
 
 .heart-main:hover path {
-  animation: stroke-animation 2s ease-in-out;
-  transition: all 0.3s linear 0s;
-  width: 100%;
-  height: 0; }
+  animation: stroke-animation 1.5s ease-in-out; }
 
 @keyframes stroke-animation {
   0% {
@@ -319,7 +317,8 @@ path {
     stroke: transparent; }
   30% {
     stroke-dashoffset: 0;
-    stroke: transparent; }
+    stroke: transparent;
+    fill: url(#myGradient); }
   60% {
     stroke-dashoffset: 0;
     stroke: transparent;
@@ -904,9 +903,9 @@ path {
 
 @media screen and (max-width: 768px) {
   .main-restaurant__bands {
-    width: 100%; }
+    width: 75%; }
   .main-restaurant__band {
-    width: 95%;
+    width: 100%;
     height: 6rem;
     margin: auto;
     margin-top: 2rem; }
@@ -939,7 +938,7 @@ path {
     font-size: 1rem; } }
 
 .button-menu {
-  width: 30%;
+  width: 20%;
   height: 3rem;
   color: white;
   font-size: 1rem;
@@ -956,3 +955,13 @@ path {
 .button:hover {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   box-shadow: 4px 4px 4px 4px #5e5d5d; }
+
+@media screen and (max-width: 768px) {
+  .button-menu {
+    width: 50%;
+    align-self: center; } }
+
+@media screen and (max-width: 425px) {
+  .button-menu {
+    width: 50%;
+    align-self: center; } }
