@@ -9,7 +9,7 @@
      font-size:1.5rem;
      color: black;
      position: relative;
-     top: 1rem;
+     top: 1.5rem;
      left: 1.5rem;
  }
  
@@ -27,14 +27,11 @@
  
  .header-top__link__menu__icon{
      font-size:1.5rem;
-     color: black;
-    position: relative;
  }
  
  .header-logo__menu{
      margin: auto;
-     padding-top: var(--spacing-base);
-     margin-bottom: var(--spacing-xs);
+     padding-top: 1rem;
      text-align: center;
  }
 }

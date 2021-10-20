@@ -1,11 +1,15 @@
 .header-top{
   text-align: center;
   width: 100%;
+  padding-top:1rem;
+}
+
+.header-top__logo{
+  padding-bottom: 1rem;
 }
 
 .header-top__map{
   padding-top: 2rem;
-  padding-top: 1rem;
   background-color: #f2f2f2;
 }
 
@@ -43,7 +47,7 @@
 
 .header-top__logo {
   width: 50%;
-  padding-top:2rem;
+  padding-top:1rem;
   padding-bottom: 1rem;
 }
 
@@ -60,6 +64,7 @@ font-size: 1.2rem;
   font-size: 1.2rem;
   background-color: #e6e4e4;
   padding-top:5px;
+ 
 }
 
 .header-top__map__icon {

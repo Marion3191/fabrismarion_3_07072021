@@ -3,14 +3,16 @@
 *::after {
   box-sizing: border-box; }
 .heart {
-  width: 8%;
+  display: flex;
+  width: 10%;
+  height: 6rem;
   fill: transparent;
   stroke: black;
   stroke-width: 20;
   cursor: pointer;
   position: absolute;
   right: 2rem;
-  bottom: 1rem;
+  top: -5.5rem;
  }
 
 svg {

@@ -133,13 +133,16 @@
 }
 
 .main-restaurants__card__link__title {
+  width: 75%;
+  height: 3rem;
   font-size: 1.5rem;
   font-weight: 900;
   padding-left: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .main-restaurants__card__link__subtitle {
+  height: 3rem;
   font-size: 1.2rem;
   font-weight: 500;
   padding-left: 2rem;
@@ -208,8 +211,20 @@
   }
 
   .main-restaurants {
-    height: 50rem;
+    height: 55rem;
   }
+  
+.main-restaurants__card__link__title{
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+.main-restaurants__card__link__subtitle{
+  width: 70%;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
 }
 
 @media screen and (max-width: 425px) {
@@ -316,12 +331,14 @@
   }
 
   .main-restaurants__card__link__title {
+    width: 80%;
     font-size: 1.2rem;
     line-height: 2rem;
   }
 
   .main-restaurants__card__link__subtitle {
     font-size: 1.2rem;
+    width: 80%;
   }
 
   .main-restaurants__card__link__image {
